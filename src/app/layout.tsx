@@ -4,6 +4,8 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "RE Analyst | AI-Powered CRE Underwriting",
   description: "Commercial real estate deal analysis platform powered by AI. Underwrite smarter, close faster.",
