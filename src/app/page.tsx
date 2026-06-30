@@ -25,6 +25,7 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8">
             <Link href="#features" className="text-sm text-gray-400 hover:text-white transition">Features</Link>
             <Link href="#pricing" className="text-sm text-gray-400 hover:text-white transition">Pricing</Link>
+            <Link href="/analyze" className="text-sm text-blue-400 font-medium hover:text-blue-300 transition">Analyze a Deal</Link>
             <Link href="/login" className="text-sm text-gray-400 hover:text-white transition">Log in</Link>
             <Link href="/signup" className="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition">Get Started</Link>
           </div>
@@ -45,11 +46,29 @@ export default function Home() {
             The all-in-one platform for commercial real estate professionals. Analyze deals with AI, model financials, and make data-driven investment decisions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/analyze" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 rounded-xl text-lg font-bold transition shadow-lg shadow-emerald-600/20 hover:shadow-emerald-500/30">
+              Analyze a Deal Now — Free
+            </Link>
             <Link href="/signup" className="px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg text-lg font-medium transition">
               Start Free Trial
             </Link>
             <Link href="#features" className="px-8 py-3 border border-gray-700 hover:border-gray-500 rounded-lg text-lg font-medium transition">
               See How It Works
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Instant Analysis Banner */}
+      <section className="px-6 pb-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-950/60 to-emerald-950/60 border border-blue-500/20 rounded-2xl p-8 text-center">
+            <h2 className="text-2xl font-bold mb-2">Try It Right Now — No Signup Required</h2>
+            <p className="text-gray-400 mb-6 max-w-xl mx-auto">
+              Input any deal and instantly get Cap Rate, Cash-on-Cash, DSCR, IRR, a 10-year pro forma, and a Deal Score out of 100. All calculations run in your browser.
+            </p>
+            <Link href="/analyze" className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg text-lg font-medium transition">
+              Open Deal Analyzer →
             </Link>
           </div>
         </div>
@@ -98,9 +117,14 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Deal Analysis?</h2>
           <p className="text-gray-400 mb-8">Join thousands of CRE professionals who use RE Analyst to make smarter investment decisions.</p>
-          <Link href="/signup" className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg text-lg font-medium transition">
-            Get Started for Free
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/analyze" className="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-lg font-medium transition">
+              Try the Deal Analyzer
+            </Link>
+            <Link href="/signup" className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg text-lg font-medium transition">
+              Get Started for Free
+            </Link>
+          </div>
         </div>
       </section>
 
